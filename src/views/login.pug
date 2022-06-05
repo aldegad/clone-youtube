@@ -1,0 +1,7 @@
+extends base.pug
+
+block content 
+    form(method="POST")
+        input(placeholder="Email", required, name="email" type="email")
+        input(placeholder="Password", required, name="password" type="password")
+        input(type="submit", value="Login")

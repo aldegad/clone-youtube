@@ -1,0 +1,12 @@
+extends base.pug
+
+block content 
+    p=video.description
+    p
+        small=video.hashtags.join()
+    p
+        small=video.createAt
+    div
+        a(href=`${video.id}/edit`) Edit Video &rarr;
+        br
+        a(href=`${video.id}/delete`) Delete Video &rarr;
